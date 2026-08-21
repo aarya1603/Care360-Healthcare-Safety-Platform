@@ -14,46 +14,69 @@
         {% block title %}Care360{% endblock %}
     </title>
 
-   <link rel="stylesheet" href="/static/Care360/Care360.css">
+    <!-- Care360 CSS -->
+    <link rel="stylesheet"
+      href="{% static 'Care360/Care360.css' %}">
+      <link rel="stylesheet"
+      href="{% static 'Care360/Contact.css' %}">
 
 </head>
 
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+
+    <!-- ================================================= -->
+    <!-- HEADER -->
+    <!-- ================================================= -->
 
     <header class="site-header">
 
         <div class="nav-container">
 
+            <!-- LOGO -->
+
             <a href="/" class="logo">
                 💙 Care360
             </a>
 
+
+            <!-- NAVIGATION -->
+
             <nav class="navbar">
 
-                <a href="/" class="nav-link">
+                <a href="/"
+                   class="nav-link">
                     Home
                 </a>
 
-                <a href="{% url 'medicine_list' %}" class="nav-link">
+
+                <a href="{% url 'medicine_list' %}"
+                   class="nav-link">
                     💊 Medicines
                 </a>
 
-                <a href="{% url 'games' %}" class="nav-link">
+
+                <a href="{% url 'games' %}"
+                   class="nav-link">
                     🎮 Games
                 </a>
 
-                <a href="{% url 'emergency' %}" class="nav-link">
+
+                <a href="{% url 'emergency' %}"
+                   class="nav-link">
                     🚨 Emergency
                 </a>
 
-                <a href="{% url 'safetycare' %}" class="nav-link">
+
+                <a href="{% url 'safetycare' %}"
+                   class="nav-link">
                     🛡️ Safety & Care
                 </a>
 
-                <a href="/contact/" class="nav-link">
+
+                <a href="{% url 'contact' %}"
+                   class="nav-link">
                     Contact
                 </a>
 
@@ -64,21 +87,88 @@
     </header>
 
 
-    <!-- ================= MAIN ================= -->
+
+    <!-- ================================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ================================================= -->
 
     <main>
 
         {% block content %}
+
         {% endblock %}
 
     </main>
 
+<!-- ================= AI ASSISTANT ================= -->
 
-    <!-- ================= FOOTER ================= -->
+<div class="ai-bot">
+
+    <!-- Chat Button -->
+    <button id="ai-button" class="ai-button">
+        🤖
+    </button>
+
+
+    <!-- Chat Window -->
+    <div id="ai-chat" class="ai-chat">
+
+        <div class="ai-header">
+
+            <div>
+                <strong>💙 Care360 Assistant</strong>
+                <small>Here to help</small>
+            </div>
+
+            <button id="ai-close">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="ai-messages" class="ai-messages">
+
+            <div class="bot-message">
+                👋 Hi! I'm the Care360 Assistant.
+                <br><br>
+                How can I help you today?
+            </div>
+
+        </div>
+
+
+        <div class="ai-input-area">
+
+            <input
+                type="text"
+                id="ai-input"
+                placeholder="Ask Care360..."
+            >
+
+            <button id="ai-send">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="{% static 'Care360/ai-bot.js' %}"></script>
+
+    <!-- ================================================= -->
+    <!-- FOOTER -->
+    <!-- ================================================= -->
 
     <footer class="site-footer">
 
         <div class="footer-container">
+
+
+            <!-- FOOTER BRAND -->
 
             <div class="footer-brand">
 
@@ -91,6 +181,10 @@
                 </p>
 
             </div>
+
+
+
+            <!-- FOOTER LINKS -->
 
             <div class="footer-links">
 
@@ -114,6 +208,10 @@
 
         </div>
 
+
+
+        <!-- FOOTER BOTTOM -->
+
         <div class="footer-bottom">
 
             © 2026 Care360. Built with care.
@@ -121,6 +219,8 @@
         </div>
 
     </footer>
+    
+
 
 </body>
 

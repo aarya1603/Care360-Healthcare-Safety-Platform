@@ -2136,3 +2136,529 @@ main {
     }
 
 }
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+
+    padding: 90px 8%;
+
+    background: #f4faf9;
+
+}
+
+
+.contact-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.3fr;
+
+    gap: 55px;
+
+    align-items: center;
+
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.contact-image {
+
+    width: 100%;
+
+    height: 560px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+}
+
+
+.contact-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.contact-content h1 {
+
+    font-size: 58px;
+
+    color: #173f45;
+
+    margin-bottom: 35px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   CONTACT BOX
+========================================= */
+
+.contact-box {
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 0.8fr;
+
+    gap: 45px;
+
+    padding: 40px;
+
+    background: white;
+
+    border: 1px solid #d5e4e2;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+
+    margin-bottom: 25px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #244b50;
+
+    margin-bottom: 8px;
+
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #cbdad8;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color: #2c9eaa;
+
+    box-shadow: 0 0 0 3px rgba(44,158,170,0.12);
+
+}
+
+
+.form-group textarea {
+
+    height: 120px;
+
+    resize: vertical;
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.contact-box button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #299eaa;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.contact-box button:hover {
+
+    background: #217f89;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+.contact-info {
+    padding-top: 10px;
+}
+.contact-info h3 {
+    color: #173f45;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.contact-info a {
+    color: #299eaa;
+    font-size: 16px;
+    text-decoration: none;
+    word-break: break-word;
+}
+.contact-info p {
+    color: #60777a;
+    line-height: 1.6;
+}
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+.social-links a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #173f45;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background: #299eaa;
+    transform: translateY(-3px);
+}
+/* =========================================
+   MOBILE
+========================================= */
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    .contact-image {
+        height: 400px;
+    }
+    .contact-content h1 {
+        font-size: 42px;
+    }
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 500px) {
+    .contact-section {
+        padding: 60px 20px;
+    }
+    .contact-image {
+        height: 300px;
+    }
+    .contact-content h1 {
+        font-size: 36px;
+    }
+    .contact-box {
+        padding: 25px;
+    }
+
+}
+/* ========================================= */
+/* AI CARE360 ASSISTANT */
+/* ========================================= */
+
+.ai-bot {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+}
+
+
+/* CHAT BUTTON */
+
+.ai-button {
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #249eaa;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+
+.ai-button:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+/* CHAT WINDOW */
+
+.ai-chat {
+
+    position: absolute;
+
+    bottom: 75px;
+    right: 0;
+
+    width: 350px;
+    height: 500px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,0.2);
+
+    overflow: hidden;
+
+    display: none;
+
+    flex-direction: column;
+
+    border: 1px solid #d9eeee;
+
+}
+
+
+.ai-chat.active {
+
+    display: flex;
+
+}
+
+
+/* HEADER */
+
+.ai-header {
+
+    background: #174b52;
+
+    color: white;
+
+    padding: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.ai-header strong {
+
+    display: block;
+
+    font-size: 16px;
+
+}
+
+
+.ai-header small {
+
+    opacity: 0.8;
+
+}
+
+
+#ai-close {
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+/* MESSAGES */
+
+.ai-messages {
+
+    flex: 1;
+
+    padding: 15px;
+
+    overflow-y: auto;
+
+    background: #f3fafa;
+
+}
+
+
+.bot-message,
+.user-message {
+
+    max-width: 80%;
+
+    padding: 12px 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 15px;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+
+}
+
+
+/* BOT */
+
+.bot-message {
+
+    background: white;
+
+    color: #174b52;
+
+    border: 1px solid #dceeee;
+
+}
+
+
+/* USER */
+
+.user-message {
+
+    background: #249eaa;
+
+    color: white;
+
+    margin-left: auto;
+
+}
+
+
+/* INPUT */
+
+.ai-input-area {
+
+    display: flex;
+
+    padding: 12px;
+
+    border-top: 1px solid #ddd;
+
+    background: white;
+
+}
+
+
+#ai-input {
+
+    flex: 1;
+
+    border: 1px solid #d3e4e4;
+
+    border-radius: 25px;
+
+    padding: 12px 15px;
+
+    outline: none;
+
+}
+
+
+#ai-send {
+
+    width: 45px;
+
+    height: 45px;
+
+    margin-left: 8px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #249eaa;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}

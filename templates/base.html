@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}Care360{% endblock %}
+    </title>
+
+   <link rel="stylesheet" href="/static/Care360/Care360.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <a href="/" class="logo">
+                💙 Care360
+            </a>
+
+            <nav class="navbar">
+
+                <a href="/" class="nav-link">
+                    Home
+                </a>
+
+                <a href="{% url 'medicine_list' %}" class="nav-link">
+                    💊 Medicines
+                </a>
+
+                <a href="{% url 'games' %}" class="nav-link">
+                    🎮 Games
+                </a>
+
+                <a href="{% url 'emergency' %}" class="nav-link">
+                    🚨 Emergency
+                </a>
+
+                <a href="{% url 'safetycare' %}" class="nav-link">
+                    🛡️ Safety & Care
+                </a>
+
+                <a href="/contact/" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h2>
+                    💙 Care360
+                </h2>
+
+                <p>
+                    Technology that cares.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#">
+                    Accessibility
+                </a>
+
+                <a href="#">
+                    Healthcare
+                </a>
+
+                <a href="#">
+                    Safety
+                </a>
+
+                <a href="#">
+                    Technology
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Care360. Built with care.
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

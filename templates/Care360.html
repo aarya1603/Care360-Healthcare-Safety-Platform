@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Care360{% endblock %}
+
+{% block content %}
+
+<!-- =====================================================
+     HERO SECTION
+     ===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-badge">
+        💙 Care made simpler
+    </div>
+
+    <h1>
+        Care360
+    </h1>
+
+    <h2>
+        Simple. Safe. Supportive.
+    </h2>
+
+    <p>
+        Your all-in-one digital companion for senior care,
+        health, safety and everyday connection.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="{% url 'medicine_list' %}"
+           class="hero-btn primary">
+
+            💊 Manage Medicines
+
+        </a>
+
+        <a href="{% url 'games' %}"
+           class="hero-btn secondary">
+
+            🎮 Explore Games
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURES SECTION
+     ===================================================== -->
+
+<section class="features-section">
+
+    <div class="section-heading">
+
+        <span>
+            CARE360 FEATURES
+        </span>
+
+        <h2>
+            Everything you need, in one place
+        </h2>
+
+        <p>
+            Simple tools designed with accessibility
+            and ease of use in mind.
+        </p>
+
+    </div>
+
+
+    <div class="features">
+
+
+        <!-- =================================================
+             MEDICINE
+             ================================================= -->
+
+        <a href="{% url 'medicine_list' %}"
+           class="feature-link">
+
+            <div class="feature-box medicine-card">
+
+                <div class="feature-icon">
+                    🩺
+                </div>
+
+                <div class="feature-content">
+
+                    <h3>
+                        Medicine Reminders
+                    </h3>
+
+                    <p>
+                        Keep track of medicines and appointments
+                        so important doses are never forgotten.
+                    </p>
+
+                    <span class="feature-action">
+                        Manage medicines →
+                    </span>
+
+                </div>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             EMERGENCY
+             ================================================= -->
+
+        <a href="{% url 'emergency' %}"
+           class="feature-link">
+
+            <div class="feature-box emergency-card">
+
+                <div class="feature-icon">
+                    🚨
+                </div>
+
+                <div class="feature-content">
+
+                    <h3>
+                        Emergency Help
+                    </h3>
+
+                    <p>
+                        Quick access to emergency assistance
+                        when you or a loved one needs help.
+                    </p>
+
+                    <span class="feature-action">
+                        Get help →
+                    </span>
+
+                </div>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             GAMES
+             ================================================= -->
+
+        <a href="{% url 'games' %}"
+           class="feature-link">
+
+            <div class="feature-box games-card">
+
+                <div class="feature-icon">
+                    🎮
+                </div>
+
+                <div class="feature-content">
+
+                    <h3>
+                        Brain Games
+                    </h3>
+
+                    <p>
+                        Enjoy Sudoku, memory and other games
+                        designed to keep the mind active.
+                    </p>
+
+                    <span class="feature-action">
+                        Play games →
+                    </span>
+
+                </div>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             SAFETY & CARE
+             ================================================= -->
+
+        <a href="{% url 'safetycare' %}"
+           class="feature-link">
+
+            <div class="feature-box safety-card">
+
+                <div class="feature-icon">
+                    🏠
+                </div>
+
+                <div class="feature-content">
+
+                    <h3>
+                        Safety & Care
+                    </h3>
+
+                    <p>
+                        Helpful safety tools and reminders
+                        for everyday living and independent care.
+                    </p>
+
+                    <span class="feature-action">
+                        Stay safe →
+                    </span>
+
+                </div>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CALL TO ACTION
+     ===================================================== -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <span class="cta-badge">
+            MADE FOR SENIORS
+        </span>
+
+        <h2>
+            Technology that cares.
+        </h2>
+
+        <p>
+            Large controls, simple navigation and accessible
+            features — because technology should be easy for everyone.
+        </p>
+
+        <a href="{% url 'medicine_list' %}"
+           class="cta-btn">
+
+            Get Started →
+
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

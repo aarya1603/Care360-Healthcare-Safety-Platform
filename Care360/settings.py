@@ -16,6 +16,9 @@ ALLOWED_HOSTS = [
     "care360-v7gn.onrender.com",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://care360-v7gn.onrender.com",
+]
 # Application definition
 
 INSTALLED_APPS = [

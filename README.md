@@ -12,15 +12,11 @@ Care360 is an all-in-one digital healthcare and safety platform designed to prov
 
 ### 🏠 Home Page
 
-![Care360 Home](assets/home.png)
-
-### 💊 Medicine Management
-
-![Care360 Medicines](assets/medicines.png)
+![Care360 Home Page](assets/home.png)
 
 ### 🚨 Emergency Support
 
-![Care360 Emergency](assets/emergency.png)
+![Care360 Emergency Support](assets/emergency.png)
 
 ### 🎮 Games
 
@@ -28,8 +24,11 @@ Care360 is an all-in-one digital healthcare and safety platform designed to prov
 
 ### 🛡️ Safety & Care
 
-![Care360 Safety](assets/safety.png)
+![Care360 Safety & Care](assets/safetycare.png)
 
+### 📞 Contact
+
+![Care360 Contact](assets/contact.png)
 ---
 
 ## ✨ Features

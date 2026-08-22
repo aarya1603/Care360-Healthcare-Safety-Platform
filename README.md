@@ -14,7 +14,7 @@ The project was developed as a **collaborative group project** with the goal of 
 
 ## 🌐 Live Demo
 
-🔗 **[Live Demo]((https://care360-v7gn.onrender.com/))**
+🔗 **[Live Demo](https://care360-v7gn.onrender.com/)**
 
 ---
 

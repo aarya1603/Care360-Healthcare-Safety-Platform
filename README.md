@@ -171,19 +171,22 @@ http://127.0.0.1:8000/
 
 ### 🏠 Home Page
 
-*Add your Care360 homepage screenshot here.*
+<img width="1048" height="599" alt="Screenshot 2026-08-22 114111" src="https://github.com/user-attachments/assets/f7117dba-44dc-4551-a2c9-39cb61e2abd5" />
+
 
 ### 🎮 Games
 
-*Add a screenshot of the Games section here.*
+<img width="1047" height="597" alt="Screenshot 2026-08-22 114132" src="https://github.com/user-attachments/assets/87fe0fdd-4f9a-4972-9d66-008fe9c18bce" />
 
 ### 🚨 Emergency
 
-*Add a screenshot of the Emergency section here.*
+<img width="1045" height="592" alt="Screenshot 2026-08-22 114124" src="https://github.com/user-attachments/assets/14b2e41d-eec1-4318-a723-fde1be7ea9af" />
+
 
 ### 🤖 Care360 Assistant
 
-*Add a screenshot of the AI Assistant here.*
+<img width="1050" height="600" alt="Screenshot 2026-08-22 114150" src="https://github.com/user-attachments/assets/df57145a-c70d-405e-9bd2-e722ef1a1ff8" />
+
 
 ---
 

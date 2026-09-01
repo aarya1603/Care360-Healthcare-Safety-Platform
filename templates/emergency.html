@@ -10,7 +10,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Emergency Support | Care360</title>
+    <title>Emergency Support | HealthNest</title>
 
 
     <style>
@@ -1107,7 +1107,7 @@
     <nav class="navbar">
 
         <a href="/" class="logo">
-            💙 Care360
+            💙 HealthNest
         </a>
 
 
@@ -1118,27 +1118,27 @@
             </a>
 
 
-            <a href="#">
-                💊 Medicines
-            </a>
+           <a href="{% url 'medicine_list' %}">
+    💊 Medicines
+</a>
 
 
-            <a href="#">
-                🎮 Games
-            </a>
+<a href="{% url 'games' %}">
+    🎮 Games
+</a>
 
 
-            <a
-                href="{% url 'emergency' %}"
-                class="active"
-            >
-                🚨 Emergency
-            </a>
+<a
+    href="{% url 'emergency' %}"
+    class="active"
+>
+    🚨 Emergency
+</a>
 
 
-            <a href="#">
-                Contact
-            </a>
+<a href="{% url 'contact_list' %}">
+    Contact
+</a>
 
         </div>
 
@@ -1658,7 +1658,7 @@
             <div>
 
                 <div class="footer-logo">
-                    💙 Care360
+                    💙 HealthNest
                 </div>
 
 
@@ -1700,7 +1700,7 @@
 
         <div class="footer-bottom">
 
-            © 2026 Care360. Built with care.
+            © 2026 HealthNest. Built with care.
 
         </div>
 

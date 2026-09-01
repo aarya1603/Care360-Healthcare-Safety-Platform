@@ -1,256 +1,345 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Home | Care360{% endblock %}
+{% block title %}Dashboard | HealthNest{% endblock %}
 
 {% block content %}
 
-<!-- =====================================================
-     HERO SECTION
-     ===================================================== -->
+<div class="dashboard-page">
 
-<section class="hero">
+    <!-- ================= WELCOME ================= -->
 
-    <div class="hero-badge">
-        💙 Care made simpler
-    </div>
+   <section class="dashboard-header">
 
-    <h1>
-        Care360
-    </h1>
+    <div class="dashboard-welcome">
 
-    <h2>
-        Simple. Safe. Supportive.
-    </h2>
-
-    <p>
-        Your all-in-one digital companion for senior care,
-        health, safety and everyday connection.
-    </p>
-
-    <div class="hero-buttons">
-
-        <a href="{% url 'medicine_list' %}"
-           class="hero-btn primary">
-
-            💊 Manage Medicines
-
-        </a>
-
-        <a href="{% url 'games' %}"
-           class="hero-btn secondary">
-
-            🎮 Explore Games
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     FEATURES SECTION
-     ===================================================== -->
-
-<section class="features-section">
-
-    <div class="section-heading">
-
-        <span>
-            CARE360 FEATURES
+        <span class="dashboard-label">
+            YOUR HEALTH DASHBOARD
         </span>
 
-        <h2>
-            Everything you need, in one place
-        </h2>
+        <h1>
+            Welcome to <span>HealthNest</span>
+        </h1>
 
         <p>
-            Simple tools designed with accessibility
-            and ease of use in mind.
+            Manage your health, records, medicines and trusted contacts
+            from one simple place.
         </p>
 
     </div>
 
 
-    <div class="features">
+    <div class="dashboard-header-actions">
 
+        <a href="{% url 'subscription' %}" class="premium-mini-card">
 
-        <!-- =================================================
-             MEDICINE
-             ================================================= -->
+            <div class="premium-mini-icon">
+                ✦
+            </div>
 
-        <a href="{% url 'medicine_list' %}"
-           class="feature-link">
+            <div class="premium-mini-content">
 
-            <div class="feature-box medicine-card">
+                <span class="premium-mini-label">
+                    HEALTHNEST PREMIUM
+                </span>
 
-                <div class="feature-icon">
-                    🩺
-                </div>
+                <strong>
+                    ₹399 <small>/ month</small>
+                </strong>
 
-                <div class="feature-content">
+                <p>
+                    Unlock all health features
+                </p>
 
-                    <h3>
-                        Medicine Reminders
-                    </h3>
+            </div>
 
-                    <p>
-                        Keep track of medicines and appointments
-                        so important doses are never forgotten.
-                    </p>
-
-                    <span class="feature-action">
-                        Manage medicines →
-                    </span>
-
-                </div>
-
+            <div class="premium-mini-arrow">
+                →
             </div>
 
         </a>
 
 
-        <!-- =================================================
-             EMERGENCY
-             ================================================= -->
-
-        <a href="{% url 'emergency' %}"
-           class="feature-link">
-
-            <div class="feature-box emergency-card">
-
-                <div class="feature-icon">
-                    🚨
-                </div>
-
-                <div class="feature-content">
-
-                    <h3>
-                        Emergency Help
-                    </h3>
-
-                    <p>
-                        Quick access to emergency assistance
-                        when you or a loved one needs help.
-                    </p>
-
-                    <span class="feature-action">
-                        Get help →
-                    </span>
-
-                </div>
-
-            </div>
-
-        </a>
-
-
-        <!-- =================================================
-             GAMES
-             ================================================= -->
-
-        <a href="{% url 'games' %}"
-           class="feature-link">
-
-            <div class="feature-box games-card">
-
-                <div class="feature-icon">
-                    🎮
-                </div>
-
-                <div class="feature-content">
-
-                    <h3>
-                        Brain Games
-                    </h3>
-
-                    <p>
-                        Enjoy Sudoku, memory and other games
-                        designed to keep the mind active.
-                    </p>
-
-                    <span class="feature-action">
-                        Play games →
-                    </span>
-
-                </div>
-
-            </div>
-
-        </a>
-
-
-        <!-- =================================================
-             SAFETY & CARE
-             ================================================= -->
-
-        <a href="{% url 'safetycare' %}"
-           class="feature-link">
-
-            <div class="feature-box safety-card">
-
-                <div class="feature-icon">
-                    🏠
-                </div>
-
-                <div class="feature-content">
-
-                    <h3>
-                        Safety & Care
-                    </h3>
-
-                    <p>
-                        Helpful safety tools and reminders
-                        for everyday living and independent care.
-                    </p>
-
-                    <span class="feature-action">
-                        Stay safe →
-                    </span>
-
-                </div>
-
-            </div>
-
-        </a>
-
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     CALL TO ACTION
-     ===================================================== -->
-
-<section class="cta">
-
-    <div class="cta-content">
-
-        <span class="cta-badge">
-            MADE FOR SENIORS
-        </span>
-
-        <h2>
-            Technology that cares.
-        </h2>
-
-        <p>
-            Large controls, simple navigation and accessible
-            features — because technology should be easy for everyone.
-        </p>
-
-        <a href="{% url 'medicine_list' %}"
-           class="cta-btn">
-
-            Get Started →
-
+        <a href="{% url 'emergency' %}" class="dashboard-emergency">
+            🚨 Emergency Help
         </a>
 
     </div>
 
 </section>
+    <!-- ================= QUICK OVERVIEW ================= -->
+
+    <section class="overview-grid">
+
+        <div class="overview-card">
+
+            <div class="overview-icon">💊</div>
+
+            <div>
+                <span>MEDICINES</span>
+                <h3>Manage Medicines</h3>
+                <p>Track your medicines and doses.</p>
+            </div>
+
+            <a href="{% url 'medicine_list' %}">
+                View →
+            </a>
+
+        </div>
+
+
+        <div class="overview-card">
+
+            <div class="overview-icon">📄</div>
+
+            <div>
+                <span>MEDICAL RECORDS</span>
+                <h3>My Reports</h3>
+                <p>Store and understand your reports.</p>
+            </div>
+
+            <a href="{% url 'report_list' %}">
+                Open →
+            </a>
+
+        </div>
+
+
+        <div class="overview-card">
+
+            <div class="overview-icon">🛡️</div>
+
+            <div>
+                <span>INSURANCE</span>
+                <h3>Insurance</h3>
+                <p>Keep your policy information organized.</p>
+            </div>
+
+            <a href="{% url 'insurance_list' %}">
+                View →
+            </a>
+
+        </div>
+
+
+        <div class="overview-card">
+
+            <div class="overview-icon">👨‍👩‍👧</div>
+
+            <div>
+                <span>FAMILY</span>
+                <h3>Trusted Contacts</h3>
+                <p>Stay connected with your family.</p>
+            </div>
+
+            <!-- FIXED -->
+            <a href="{% url 'contact_list' %}">
+                Manage →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN FEATURES ================= -->
+
+    <section class="dashboard-section">
+
+        <div class="section-title">
+
+            <div>
+
+                <span>HEALTH MANAGEMENT</span>
+
+                <h2>
+                    Everything important, in one place
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <!-- MEDICAL RECORDS -->
+
+            <div class="dashboard-feature">
+
+                <div class="feature-top">
+
+                    <div class="large-icon">
+                        📋
+                    </div>
+
+                    <span class="status-badge">
+                        HEALTH
+                    </span>
+
+                </div>
+
+                <h3>
+                    Medical Records
+                </h3>
+
+                <p>
+                    Keep your important medical information organized
+                    and accessible whenever you need it.
+                </p>
+
+                <!-- FIXED -->
+                <a href="{% url 'report_list' %}">
+                    Manage records →
+                </a>
+
+            </div>
+
+
+            <!-- REPORTS + AI -->
+
+            <div class="dashboard-feature">
+
+                <div class="feature-top">
+
+                    <div class="large-icon">
+                        🤖
+                    </div>
+
+                    <span class="status-badge">
+                        AI
+                    </span>
+
+                </div>
+
+                <h3>
+                    Report Assistant
+                </h3>
+
+                <p>
+                    Upload a medical report and get a simple,
+                    easy-to-understand informational summary.
+                </p>
+
+                <a href="{% url 'report_list' %}">
+                    Upload report →
+                </a>
+
+            </div>
+
+
+            <!-- CHECKUPS -->
+
+            <div class="dashboard-feature">
+
+                <div class="feature-top">
+
+                    <div class="large-icon">
+                        🩺
+                    </div>
+
+                    <span class="status-badge">
+                        TRACK
+                    </span>
+
+                </div>
+
+                <h3>
+                    Health Checkups
+                </h3>
+
+                <p>
+                    Keep track of periodic health checkups
+                    and never miss an important reminder.
+                </p>
+
+                <a href="{% url 'checkup_list' %}">
+                    View schedule →
+                </a>
+
+            </div>
+
+
+            <!-- FAMILY -->
+
+            <div class="dashboard-feature">
+
+                <div class="feature-top">
+
+                    <div class="large-icon">
+                        ❤️
+                    </div>
+
+                    <span class="status-badge">
+                        FAMILY
+                    </span>
+
+                </div>
+
+                <h3>
+                    Family Network
+                </h3>
+
+                <p>
+                    Connect trusted family members and quickly
+                    send them an alert when you need assistance.
+                </p>
+
+                <a href="{% url 'contact_list' %}">
+                    Manage family →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EMERGENCY ================= -->
+
+    <section class="emergency-panel">
+
+        <div class="emergency-content">
+
+            <span>
+                EMERGENCY SUPPORT
+            </span>
+
+            <h2>
+                Need help quickly?
+            </h2>
+
+            <p>
+                Access your emergency contacts and get assistance
+                when you need it most.
+            </p>
+
+        </div>
+
+        <a href="{% url 'emergency' %}">
+            Open Emergency Support →
+        </a>
+
+    </section>
+
+
+    <!-- ================= DISCLAIMER ================= -->
+
+    <section class="dashboard-disclaimer">
+
+        <strong>
+            Important:
+        </strong>
+
+        HealthNest provides health-management and informational tools.
+        AI-generated report summaries are for general information only
+        and should not be considered a medical diagnosis.
+
+    </section>
+
+</div>
 
 {% endblock %}

@@ -1,59 +1,127 @@
-Perfect. Since your actual contribution was **Frontend + Games + some Emergency module work**, we should highlight exactly that. That makes the README honest and useful for your resume.
-
-Here is a **complete professional README** you can paste into your `README.md`. I have kept the Live Demo as a placeholder because I don't have the actual URL from your teammate's screenshot.
-
-# 💙 Care360 — Healthcare & Safety Platform
+# 💙 Care360
 
 ### Simple. Safe. Supportive.
 
-Care360 is an all-in-one digital healthcare and safety platform designed to provide users with essential tools for **medicine management, emergency assistance, safety and care, brain games, and AI-powered support** through an easy-to-use web application.
+Care360 is an all-in-one digital healthcare and safety platform designed to provide users with essential tools for **medicine management, emergency assistance, safety reminders, brain games, and AI-powered support** in one easy-to-use web application.
 
-The project was developed as a **collaborative group project** with the goal of bringing multiple healthcare and safety-related features together in one accessible platform.
+🌐 **[Live Demo →](https://care360-v7gn.onrender.com/)**
 
 ---
 
-## 🌐 Live Demo
+## 📸 Screenshots
 
-🔗 **[Live Demo](https://care360-v7gn.onrender.com/)**
+### 🏠 Home Page
 
+![Care360 Home Page](assets/home.png)
+
+### 🚨 Emergency Support
+
+![Care360 Emergency Support](assets/emergency.png)
+
+### 🎮 Games
+
+![Care360 Games](assets/games.png)
+
+### 🛡️ Safety & Care
+
+![Care360 Safety & Care](assets/safetycare.png)
+
+### 📞 Contact
+
+![Care360 Contact](assets/contact.png)
 ---
 
 ## ✨ Features
 
 ### 💊 Medicine Management
 
-* Helps users manage and keep track of their medicines.
-* Provides a simple interface for accessing medicine-related information.
+Care360 provides tools to help users keep track of their medicines and daily doses.
 
-### 🚨 Emergency Assistance
-
-* Provides quick access to emergency-related functionality.
-* Designed to make important safety information easier to access.
-
-### 🛡️ Safety & Care
-
-* Provides useful safety and care resources.
-* Designed with accessibility and ease of use in mind.
-
-### 🎮 Brain Games
-
-* Interactive games designed to provide entertainment and mental stimulation.
-* Includes multiple simple games that users can play directly through the platform.
-
-### 🤖 AI-Powered Assistant
-
-* Integrated Care360 Assistant for user support.
-* Provides an interactive chatbot interface within the website.
-
-### 📱 User-Friendly Interface
-
-* Clean and simple navigation.
-* Responsive web interface.
-* Dedicated sections for different healthcare and safety features.
+* Add medicines
+* Manage medicine doses
+* Track scheduled doses
+* Mark doses as taken
+* Mark doses as skipped
+* Delete medicines
+* View medicine information in one place
 
 ---
 
-## 🛠️ Technologies Used
+### 🚨 Emergency Support
+
+Provides quick access to emergency-related assistance when users need it.
+
+* Emergency support section
+* Quick access to emergency services
+* Emergency contacts and assistance
+* Dedicated emergency page for faster access
+
+---
+
+### 🛡️ Safety & Care
+
+A dedicated section containing practical safety tools and reminders.
+
+#### 🔥 Gas Safety Timer
+
+The Gas Safety Timer helps users remember to check their stove or gas after a chosen period.
+
+Features include:
+
+* Quick timer presets
+* Custom minutes and seconds
+* Start / Pause / Reset controls
+* Visual timer countdown
+* Timer completion alert
+* 5-second audible beep alarm
+* Browser notification support
+* Safety reminders
+
+> ⚠️ The timer is a reminder tool and should not replace direct supervision of cooking or gas appliances.
+
+#### 🏠 Home Safety Checklist
+
+Users can check common household safety precautions such as:
+
+* Clear floors and walkways
+* Proper lighting
+* Accessible frequently used items
+* Availability of emergency numbers
+
+#### 🚶 Mobility & Fall Safety
+
+Provides simple reminders for maintaining a safer environment while moving around the home.
+
+#### 🛡️ Personal Safety
+
+Includes reminders related to:
+
+* Emergency contacts
+* Important information
+* Phone readiness
+
+---
+
+### 🎮 Brain Games
+
+Care360 includes simple games for entertainment and mental activity.
+
+Available games include:
+
+* 🎯 Tic-Tac-Toe
+* ✊ Rock Paper Scissors
+* 🔢 Guess the Number
+* 🧩 Sudoku
+
+---
+
+### 🤖 AI Assistant
+
+Care360 includes an integrated AI assistant to provide conversational support and help users access information through the platform.
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 
@@ -66,41 +134,79 @@ The project was developed as a **collaborative group project** with the goal of 
 * Python
 * Django
 
-### Other Technologies
+### Database
 
-* Django Templates
-* Static files and assets
-* AI API integration
+* SQLite
+
+### AI
+
+* Google Gemini API
+
+### Deployment
+
+* Render
+
+### Version Control
+
+* Git
+* GitHub
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 Care360/
 │
-├── assets/                 # Images and other project assets
+├── Care360/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── ...
 │
-├── Care360/               # Main Django project configuration
+├── Care360_homepage_be/
+│   ├── views.py
+│   ├── urls.py
+│   └── ...
 │
-├── Care360_homepage_be/   # Homepage/backend-related functionality
+├── medicines/
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── ...
 │
-├── emergency/             # Emergency assistance module
+├── emergency/
+│   ├── views.py
+│   └── ...
 │
-├── games/                 # Brain games module
+├── games/
+│   ├── views.py
+│   └── ...
 │
-├── medicines/             # Medicine management module
+├── safetycare/
+│   ├── views.py
+│   └── ...
 │
-├── safetycare/            # Safety and care module
+├── templates/
+│   └── ...
 │
-├── static/                # CSS, JavaScript and static resources
+├── static/
+│   └── Care360/
+│       ├── Care360.css
+│       ├── Care360.js
+│       ├── ai-bot.js
+│       └── ...
 │
-├── templates/             # HTML templates
+├── assets/
+│   ├── home.png
+│   ├── medicines.png
+│   ├── emergency.png
+│   ├── games.png
+│   └── safety.png
 │
-├── .gitignore             # Git ignored files
-├── manage.py              # Django management script
-├── README.md              # Project documentation
-└── requirements.txt       # Python dependencies
+├── manage.py
+├── .txt
+└── README.md
 ```
 
 ---
@@ -110,56 +216,72 @@ Care360/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/aarya1603/Care360-Healthcare-Safety-Platform.git
+git clone https://github.com/YOUR-USERNAME/Care360.git
 ```
 
-### 2. Open the project
+Then enter the project directory:
 
 ```bash
-cd Care360-Healthcare-Safety-Platform
+cd Care360
 ```
 
-### 3. Create a virtual environment
+---
+
+### 2. Create a virtual environment
 
 ```bash
-python -m venv venv
+python -m venv .venv
 ```
 
-### 4. Activate the virtual environment
+---
 
-#### Windows PowerShell
+### 3. Activate the virtual environment
 
-```powershell
-venv\Scripts\activate
+#### macOS / Linux
+
+```bash
+source .venv/bin/activate
 ```
 
-If PowerShell blocks script execution, run:
+#### Windows
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```bash
+.venv\Scripts\activate
 ```
 
-and then:
+---
 
-```powershell
-venv\Scripts\activate
-```
-
-### 5. Install dependencies
+### 4. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Run the Django development server
+---
+
+### 5. Apply database migrations
+
+```bash
+python manage.py migrate
+```
+
+---
+
+### 6. Collect static files
+
+```bash
+python manage.py collectstatic --no-input
+```
+
+---
+
+### 7. Start the Django development server
 
 ```bash
 python manage.py runserver
 ```
 
-### 7. Open the application
-
-Open:
+Open the application at:
 
 ```text
 http://127.0.0.1:8000/
@@ -167,91 +289,109 @@ http://127.0.0.1:8000/
 
 ---
 
-## 📸 Screenshots
+## 🌐 Live Deployment
 
-### 🏠 Home Page
+Care360 is deployed using Render.
 
-<img width="1048" height="599" alt="Screenshot 2026-08-22 114111" src="https://github.com/user-attachments/assets/f7117dba-44dc-4551-a2c9-39cb61e2abd5" />
+### 🔗 Live Application
 
+**https://care360-v7gn.onrender.com/**
 
-### 🎮 Games
-
-<img width="1047" height="597" alt="Screenshot 2026-08-22 114132" src="https://github.com/user-attachments/assets/87fe0fdd-4f9a-4972-9d66-008fe9c18bce" />
-
-### 🚨 Emergency
-
-<img width="1045" height="592" alt="Screenshot 2026-08-22 114124" src="https://github.com/user-attachments/assets/14b2e41d-eec1-4318-a723-fde1be7ea9af" />
-
-
-### 🤖 Care360 Assistant
-
-<img width="1050" height="600" alt="Screenshot 2026-08-22 114150" src="https://github.com/user-attachments/assets/df57145a-c70d-405e-9bd2-e722ef1a1ff8" />
-
+The deployed application includes the Django backend, static files, database migrations, and Care360 frontend.
 
 ---
 
-## 👩‍💻 My Contribution
+## 🔊 Gas Timer Alarm
 
-This project was developed as a **group project**, and my primary contributions were focused on the **frontend, Games module, and Emergency module**.
+The Gas Safety Timer uses the browser's **Web Audio API** to generate an audible alarm.
 
-### 🎨 Frontend Development
+When the timer reaches zero:
 
-* Worked on the user interface and overall visual presentation of the application.
-* Developed and refined webpage layouts and navigation.
-* Worked with HTML, CSS and JavaScript to create interactive and user-friendly interfaces.
-* Helped maintain consistency across different sections of the platform.
+```text
+Timer reaches 00:00
+        ↓
+🚨 Timer Finished
+        ↓
+🔊 Repeated Beeps
+        ↓
+5 seconds
+        ↓
+🔇 Alarm Stops
+```
 
-### 🎮 Games Module
-
-* Worked on the development and implementation of the Games section.
-* Created and integrated interactive brain games into the Care360 platform.
-* Worked on the frontend presentation and user interaction of the games.
-
-### 🚨 Emergency Module
-
-* Contributed to the Emergency module.
-* Worked on the frontend/interface and functionality of emergency-related features.
-* Helped make emergency information and actions easily accessible to users.
+No external audio file is required for the alarm.
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Project Goal
 
-The primary objective of Care360 is to create a **single digital platform** that combines healthcare assistance, safety features, emergency support, mental stimulation, and AI-powered assistance.
+The goal of Care360 is to bring several useful everyday healthcare and safety utilities together into a single, simple platform.
 
-Instead of requiring users to navigate through multiple applications, Care360 brings these features together in one simple and accessible interface.
+Instead of requiring users to rely on multiple separate tools, Care360 combines:
+
+* Medicine tracking
+* Emergency assistance
+* Safety reminders
+* Gas safety timer
+* Brain games
+* AI assistance
+
+into one centralized web application.
+
+---
+
+## 💡 Why Care360?
+
+Many everyday safety and healthcare tasks are simple but easy to forget.
+
+Care360 focuses on making these tasks:
+
+* **Simple**
+* **Accessible**
+* **Organized**
+* **Easy to navigate**
+* **Available from one platform**
+
+The project is designed with a strong focus on usability and straightforward navigation.
 
 ---
 
 ## 🔮 Future Improvements
 
-Potential future improvements include:
+Possible future improvements include:
 
-* 📱 Development of a dedicated mobile application
-* 🔔 Advanced medicine reminders and notifications
-* 👨‍⚕️ Integration with healthcare professionals
-* 📊 Personalized health and activity dashboards
-* 🤖 More advanced AI-powered assistance
-* 🗺️ Location-based emergency services
-* 🔐 Improved user authentication and personalized profiles
+* 👤 User authentication and personalized profiles
+* 🔔 Advanced medicine reminders
+* 📍 Emergency location sharing
+* 📞 One-tap emergency calling
+* 🗄️ PostgreSQL production database
+* 🤖 More advanced AI assistant capabilities
 * ♿ Additional accessibility features
+* 🔊 Customizable alarm sounds
+* 📱 Improved mobile responsiveness
+* 🎮 Additional games
+* 📊 Personal health and activity dashboard
 
 ---
 
-## 👥 Team Project
+## 👩‍💻 Developer
 
-Care360 was developed collaboratively as a group project.
+### Rucha Kadam
 
-Each member contributed to different parts of the application, including frontend development, backend functionality, healthcare modules, safety features, games, and AI-related functionality.
+Care360 was developed using:
 
----
+**Python • Django • HTML • CSS • JavaScript**
 
-## 📌 Disclaimer
-
-Care360 is an academic/project application developed for educational and demonstration purposes. It is not intended to replace professional medical advice, diagnosis, or emergency medical services.
+Built with ❤️ to create a simple and supportive digital care platform.
 
 ---
 
-## 💙 Care360
+## ⭐ Support
 
-**Simple. Safe. Supportive.**
+If you find this project useful, consider giving the repository a ⭐ on GitHub!
+
+---
+
+## 📄 License
+
+This project is intended for educational and demonstration purposes.

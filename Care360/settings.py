@@ -9,13 +9,12 @@ SECRET_KEY = 'django-insecure-change-this-in-production'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "care360-v7gn.onrender.com",
 ]
-
 CSRF_TRUSTED_ORIGINS = [
     "https://care360-v7gn.onrender.com",
 ]
@@ -28,12 +27,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 
     # Care360 apps
     'medicines',
     'emergency',
     'games',
     'safetycare',
+    'healthprofile',
+    'accounts',
+    'reports',
+    'insurance',
+    'checkups',
+    'trustedcontacts',
+    'subscriptions',
 ]
 
 MIDDLEWARE = [
@@ -162,3 +169,13 @@ EMAIL_HOST_USER = "@gmail.com"
 EMAIL_HOST_PASSWORD = "YOUR_GMAIL_APP_PASSWORD"
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/health/'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = "/health/"
+LOGIN_URL = "/accounts/login/"
+LOGOUT_REDIRECT_URL = "/"
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"

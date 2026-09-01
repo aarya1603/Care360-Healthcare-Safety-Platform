@@ -1,10 +1,10 @@
-# 💙 Care360
+# 💙 HealthNest
 
 ### Simple. Safe. Supportive.
 
 Care360 is an all-in-one digital healthcare and safety platform designed to provide users with essential tools for **medicine management, emergency assistance, safety reminders, brain games, and AI-powered support** in one easy-to-use web application.
 
-🌐 **[Live Demo →](https://care360-v7gn.onrender.com/)**
+🌐 **[Live Demo →](https://healthnest-kc4v.onrender.com/)]
 
 ---
 

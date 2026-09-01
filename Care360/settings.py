@@ -13,10 +13,10 @@ DEBUG = False
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "care360-v7gn.onrender.com",
+    ".onrender.com",
 ]
 CSRF_TRUSTED_ORIGINS = [
-    "https://care360-v7gn.onrender.com",
+    "https://*.onrender.com",
 ]
 # Application definition
 
